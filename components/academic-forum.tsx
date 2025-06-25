@@ -167,7 +167,7 @@ export function AcademicForum({ onViewPosts }: AcademicForumProps) {
             {isLoggedIn && user ? (
               <div className="flex items-center space-x-3">
                 <Avatar className="w-10 h-10">
-                  <AvatarImage src={user.avatar || "/placeholder.svg"} alt={user.name} />
+                  <AvatarImage src={user.avatar || "https://i.pravatar.cc/60"} alt={user.name} />
                   <AvatarFallback className="bg-emerald-100 text-emerald-700">
                     {user.name?.charAt(0) || "U"}
                   </AvatarFallback>

@@ -220,7 +220,7 @@ export function PostsView({ onBack }: PostsViewProps) {
                 {/* User Info */}
                 <div className="flex items-center space-x-3 mb-3">
                   <Avatar className="w-10 h-10">
-                    <AvatarImage src="/placeholder.svg" alt={post.userName} />
+                    <AvatarImage src={`https://i.pravatar.cc/6${post.id}`} alt={post.userName} />
                     <AvatarFallback className="bg-emerald-100 text-emerald-700">
                       {post.userName.charAt(0)}
                     </AvatarFallback>
