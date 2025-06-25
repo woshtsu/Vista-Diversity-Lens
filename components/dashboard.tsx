@@ -19,7 +19,7 @@ import {
   Area,
 } from "recharts"
 import { TrendingUp, Users, MapPin, Eye, Calendar, Activity, Search, Leaf, Mountain } from "lucide-react"
-import { Map, Marker } from "pigeon-maps"
+import { Map as PigeonMap, Marker } from "pigeon-maps"
 import { getAllPosts, getAllSpecies, type Post, type Species } from "@/lib/api"
 import { toast } from "@/hooks/use-toast"
 
@@ -561,8 +561,8 @@ export function Dashboard() {
         </CardHeader>
         <CardContent>
           <div className="h-64 rounded-lg overflow-hidden border border-stone-200">
-            <Map
-              center={recentSightings.length > 0 ? recentSightings[0].coordinates : [-12.0464, -77.0428]}
+            <PigeonMap
+              center={recentSightings.length > 0 ? recentSightings[0].coordinates : [50.879, 4.6997]}
               zoom={8}
               attribution={false}
             >
@@ -575,7 +575,7 @@ export function Dashboard() {
                   onClick={() => console.log(`Clicked on ${sighting.species} sighting`)}
                 />
               ))}
-            </Map>
+            </PigeonMap>
           </div>
           <div className="mt-3 flex items-center justify-between text-sm text-stone-600">
             <span>Últimos avistamientos en tiempo real</span>
