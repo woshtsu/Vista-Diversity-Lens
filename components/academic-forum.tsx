@@ -25,7 +25,6 @@ export function AcademicForum({ onViewPosts }: AcademicForumProps) {
   const [showLoginModal, setShowLoginModal] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
 
-  // Cargar especies al montar el componente
   useEffect(() => {
     loadSpecies()
   }, [])

@@ -37,7 +37,6 @@ export function LoginModal({ isOpen, onClose }: LoginModalProps) {
         })
       }
     } catch (error) {
-      // Error handling is done in the login function
     } finally {
       setIsLoading(false)
     }

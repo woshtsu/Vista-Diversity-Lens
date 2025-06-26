@@ -11,7 +11,7 @@ import { AuthProvider } from "@/contexts/auth-context"
 import { PostsView } from "@/components/posts-view"
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("foro-academico")
+  const [activeTab, setActiveTab] = useState("noticias")
   const [showPostsView, setShowPostsView] = useState(false)
 
   const renderTabContent = () => {

@@ -25,11 +25,11 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">BIO</span>
+              <span className="text-white font-bold text-sm">DL</span>
             </div>
             <div className="hidden sm:block">
-              <h1 className="font-bold text-stone-800">BIOML</h1>
-              <p className="text-xs text-stone-600">BIODIVERSITY MONITORING</p>
+              <h1 className="font-bold text-stone-800">Diversity Lens</h1>
+              <p className="text-xs text-stone-600">Monitoreo de biodiversidad</p>
             </div>
           </div>
 
